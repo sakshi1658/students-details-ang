@@ -12,7 +12,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "students-details",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
@@ -26,10 +26,8 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+               "src/favicon.ico",
+               "src/assets"
             ],
             "styles": [
               "src/styles.scss"
@@ -98,5 +96,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "ecd39c35-78b6-4430-902c-6ede8c482fee"
   }
 }
